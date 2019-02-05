@@ -16,11 +16,7 @@ connection.connect(function (err) {
     start();
 });
 
-//Run app to display all of the items available for sale. 
-    //Include product id, name, and price 
 
-
-// The app should then prompt users with two messages.
 var start = function(){
   connection.query("SELECT * FROM storeproducts", function(err, res){
     if(err) throw err;
@@ -72,18 +68,3 @@ var fiftyshades = function(){
       
 
 
-// The first should ask them the ID of the product they would like to buy.
-// The second message should ask how many units they would like to buy.
-
-// Once the customer has placed the order, 
-    //your application should check if your store has enough 
-
-// If not, the app should log a phrase like Insufficient quantity!, 
-//and then prevent the order from going through.
-
-// However, if there is enough, you should fulfill the customer's order.
-
-// Update the SQL database to reflect the remaining quantity.
-// Once the update goes through, show the customer the total cost 
-
-  
