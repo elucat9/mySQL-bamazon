@@ -14,13 +14,7 @@ Then, in node.js, the user would be shown the store catalogue when they input 'n
 The inventory stock has reduced by the user's purchased quantity.
 ![mySQL Workbench - inventory is depleted](depleteinventory.JPG)
 
-Here, the user's order quantity is larger than what is in stock:
+If user's order quantity is larger than what is in stock, they will get be prompted to modify their order.
 ![Ordering 51 copies of 50 Shades of Chicken when there is only 50 copies in stock](ordertoolarge.JPG)
 
-The user would be told there isn't enough to complete the order. The order catalogue would display again so they can modify their order.
 
-The app prevents the user from accidentally typing in a negative order quantity or an invalid order number. The user would be prompted to modify their order.
-
-![Invalid Item ID entered](invalidID.JPG)
-
-![Invalid order quantity entered](invalidQTY.JPG)
